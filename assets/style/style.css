@@ -1,1 +1,96 @@
 /* BASIC STYLES HERE */
+.main-view {
+  /* position: absolute; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.top-banner {
+  min-height: 20vh;
+}
+
+body {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.navigation {
+  max-height: 5vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -80vh;
+}
+
+.navbar {
+  color: white;
+  /* min-height: 5vh; */
+  min-width: 70vw;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  margin: 2rem 1rem 2rem 1rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.time {
+  padding: 1rem;
+  max-width: 50vw;
+  /* background-color: rgba(0, 0, 0, 0.304); */
+  /* backdrop-filter: blur(10px); */
+}
+
+.image-author {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  color: white;
+  opacity: 80%;
+}
+
+.weather {
+  position: absolute;
+  top: 20px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.quote-area {
+  position: absolute;
+  bottom: 25vh;
+}
+
+.todo-list {
+  position: absolute;
+  word-break: break-all;
+  top: 0px;
+  right: 0px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#todos-list {
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+#todos-list::-webkit-scrollbar {
+  display: none;
+}
+
+#quote:hover+#author {
+  opacity: 1;
+}
+
+#author {
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.input-description {
+  width: 50%;
+}
